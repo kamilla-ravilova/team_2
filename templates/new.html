@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/main/css/main.css">
+<link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<style>
+body {
+  background-image: url('https://psv4.userapi.com/c909218/u352488182/docs/d29/15439975f4c0/Untitled-1.png?extra=Dq6mzyMOgAlf_aFWcg5_1wr_JoDsdEoGHRizYyGtTmE1C49Eb7Swe-T_SXoybzvnU9KPkXZYZu4Khp9yjL1aa1gx12_1c8wnw9nd2tfXGDsgKn1iz1-Z_m7hbcdvFi7YEN_InsJBhlhLbf5jvKb5WAY097w');
+}
+         .container { display: flex;}
+     .custom-heading { flex: 1;
+            padding: 38px;
+    font-size: 25px;
+margin-top: 0px;}
+
+
+  ul { list-style-type: none;   position: relative;
+        top: -37px;}
+
+  ul li {padding-left: 38px;
+    margin-top: 20px; }
+
+  ul li:not(:first-child) { margin-top: -10px; }
+  main { padding-left: 550px;
+  margin-top: -250px; }
+
+    form {
+        width: 600px;
+    }
+ h1 { color: white; }
+
+  .btn-success { background-color: #007bff; color: white; }
+
+</style>
+<body>
+      <aside>
+<img src="https://psv4.userapi.com/c235031/u352488182/docs/d21/0169a2b201e8/log.png?extra=iKqti4LFgp2NZQ076QG85GUoODyC3Cq_rnKfbw9ciWMdQNdwSk4pSY53H8bMCLM3OhqcbB_z3bWGvJINoMemuVpXNZnmJuA_pxidnhqqSYBNwV9z5zn9vYjyzM11j2IhqMy4dH1DEaRvT09RlSPl8nPi5X8" width="150" height="150" style="margin-left: 38px; margin-top: 38px;">
+<span class="logo"></span>
+<font color="#ffffff"> <h3 class="custom-heading">Navigation</h3>
+<aside>
+               <ul style="list-style-type: none; padding: 0;">
+  <li style="width: 100px; margin-bottom: 20px;">
+ <a href="{% url 'home' %}"><li><i class="fas solid fa-house-chimney-user"> <font color="#ffffff"></i>Home</li></a> </li>
+              <li style="width: 100px;">  <a href="{% url 'new' %}"><li><button class="btn btn-info"><i class="fas fa-pluse-cicle"></i>New note</button></li></a>
+          </ul>
+</aside>
+      <main>
+   <div class="main">
+<div style="text-align: center;">
+      <h1>Новая новость</h1>
+<form method="post">
+          {{ form.title}}
+          <input type="text" placeholder="Headline" class="form-control"><br>
+          <textarea class="form-control" placeholder="text"></textarea><br>
+          <input type="date" class="form-control"><br>
+          <button class="btn btn-success" type="sumbit">Add new</button>
+      </form>
+
+  </div>
+       </div>
+      </main>
+
+</body>
+</html>
